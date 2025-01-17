@@ -11,7 +11,7 @@ Welcome to the DSA repository! This repository contains implementations of vario
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+ ## Introduction
 
 This repository is designed to help you understand and implement data structures and algorithms in three different programming languages: Python, JavaScript, and Rust. Each language has its own directory containing the respective implementations.
 
