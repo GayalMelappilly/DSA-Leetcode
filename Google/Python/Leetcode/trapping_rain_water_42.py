@@ -11,13 +11,13 @@ class Solution:
 
         while l<r:
             if left_top<right_top:
+                l += 1
                 if height[l]>left_top:
                     left_top = height[l]
                 units += left_top-height[l]
-                l += 1
             else:
+                r -= 1
                 if height[r]>right_top:
                     right_top = height[r]
                 units += right_top-height[r]    
-                r -= 1
         return units
