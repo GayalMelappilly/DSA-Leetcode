@@ -62,7 +62,8 @@ class BST:
                     if currentNode.left is not None:
                         currentNode.value = currentNode.left.value
                         currentNode.right = currentNode.left.right
-                        currentNode.right = currentNode.left.left
+                        currentNode.left = currentNode.left.left
+                        
                     elif currentNode.right is not None:
                         currentNode.value = currentNode.right.value
                         currentNode.left = currentNode.right.left
