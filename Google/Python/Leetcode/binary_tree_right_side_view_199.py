@@ -11,7 +11,7 @@ class Solution:
             return []
 
         currLevel = [root]
-        rightView = []
+        res = []
 
         while currLevel:
 
@@ -21,15 +21,14 @@ class Solution:
                     nextLevel.append(node.left)
                 if node.right:
                     nextLevel.append(node.right)
-            
-            rightMost = currLevel.pop()
-            rightView.append(rightMost.val)
+
+            res.append(currLevel.pop().val)
 
             if not nextLevel:
-                return rightView
+                return res
             else:
                 currLevel = nextLevel    
             
-        return rightView
+        return res
 
         
